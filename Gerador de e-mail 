@@ -1,0 +1,117 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM69Xq63SybhZM0vhmwmtyn",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jwildson870-prog/Wildson-/blob/main/Gerador%20de%20e-mail%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "ukC9Je5tun6o"
+      },
+      "outputs": [],
+      "source": [
+        "# Gerador de e-mail\n",
+        "\n",
+        "import random\n",
+        "\n",
+        "numero = []\n",
+        "\n",
+        "for i in range(3):\n",
+        "    numero.append(random.randint(1, 1001))\n",
+        "\n",
+        "while True:\n",
+        "    p_nome = input(\"Digite seu primeiro nome: \").strip()\n",
+        "\n",
+        "    if not all(\"a\" <= letra <= \"z\" for letra in p_nome):\n",
+        "        print(\"Use apenas letras minúsculas sem acentos.\")\n",
+        "    else:\n",
+        "        break\n",
+        "\n",
+        "while True:\n",
+        "    s_nome = input(\"Digite seu segundo nome: \").strip()\n",
+        "\n",
+        "    if not all(\"a\" <= letra <= \"z\" for letra in s_nome):\n",
+        "        print(\"Use apenas letras minúsculas sem acentos.\")\n",
+        "    else:\n",
+        "        break\n",
+        "\n",
+        "primeira_letra_nome1 = p_nome[0]\n",
+        "primeira_letra_nome2 = s_nome[0]\n",
+        "\n",
+        "lista_email = (\n",
+        "    f\"1 - {p_nome}.{s_nome}{numero[0]}@gmail.com\",\n",
+        "    f\"2 - {primeira_letra_nome1}.{s_nome}{numero[1]}@gmail.com\",\n",
+        "    f\"3 - {primeira_letra_nome2}.{p_nome}{numero[2]}@gmail.com\"\n",
+        ")\n",
+        "\n",
+        "for opcao in lista_email:\n",
+        "    print(opcao)\n",
+        "\n",
+        "\n",
+        "def primeiro_gmail():\n",
+        "    print(lista_email[0])\n",
+        "    print(\"E-mail gerado com sucesso!!!\")\n",
+        "\n",
+        "\n",
+        "def segundo_gmail():\n",
+        "    print(lista_email[1])\n",
+        "    print(\"E-mail gerado com sucesso!!!\")\n",
+        "\n",
+        "\n",
+        "def terceiro_gmail():\n",
+        "    print(lista_email[2])\n",
+        "    print(\"E-mail gerado com sucesso!!!\")\n",
+        "\n",
+        "\n",
+        "while True:\n",
+        "    escolha_email = input(\"Digite o número do e-mail escolhido: \")\n",
+        "\n",
+        "    if not escolha_email.isdigit():\n",
+        "        print(\"Digite apenas números!\")\n",
+        "        continue\n",
+        "\n",
+        "    escolha_email = int(escolha_email)\n",
+        "\n",
+        "    match escolha_email:\n",
+        "        case 1:\n",
+        "            primeiro_gmail()\n",
+        "            break\n",
+        "\n",
+        "        case 2:\n",
+        "            segundo_gmail()\n",
+        "            break\n",
+        "\n",
+        "        case 3:\n",
+        "            terceiro_gmail()\n",
+        "            break\n",
+        "\n",
+        "        case _:\n",
+        "            print(\"Número inválido, tente novamente!!!\")"
+      ]
+    }
+  ]
+}
