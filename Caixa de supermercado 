@@ -1,0 +1,153 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyMTyk2AbjcOI+54A75I+ld2",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jwildson870-prog/Wildson-/blob/main/Caixa%20de%20supermercado%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "SubLFNfCcjAu"
+      },
+      "outputs": [],
+      "source": [
+        "print(\"Um kg de feijão 8,0R$\")\n",
+        "print(\"Um kg de arroz 6,0R$\")\n",
+        "print(\"Um kg de farinha  4,0R$\")\n",
+        "print(\"Um kg de macarrão 6,0R$\")\n",
+        "print(\"Um kg de carne bovina 30,0R$\")\n",
+        "print(\"Um kg de carne suína 25,0R$\")\n",
+        "print(\"Um kg de frango 20,0R$\")\n",
+        "print(\"Um kg de peixe 15,0R$\")\n",
+        "\n",
+        "lpn = \"1 - feijão\", \"2 - arroz\", \"3 - farinha\", \"4 - macarrão\", \"5 - carne bovina\", \"6 - carne suína\", \"7 - frango\", \"8 - peixe\"\n",
+        "\n",
+        "for lpns in lpn:\n",
+        "  print(lpns)\n",
+        "\n",
+        "feijao = 8\n",
+        "arroz = 6\n",
+        "farinha = 4\n",
+        "macarrao = 6\n",
+        "carne_boi = 30\n",
+        "carne_porco = 25\n",
+        "frango = 20\n",
+        "peixe = 15\n",
+        "\n",
+        "qtdd_produtos = int(input(\"Quantos produtos você comprou: \"))\n",
+        "\n",
+        "valor_total = 0\n",
+        "\n",
+        "for i in range(qtdd_produtos):\n",
+        "\n",
+        "  nome_produto = int(input(\"Qual o número do produto: \"))\n",
+        "\n",
+        "  if nome_produto == 2:\n",
+        "    print(\"preço: \",arroz)\n",
+        "    preco = arroz\n",
+        "    valor_total += preco\n",
+        "\n",
+        "  elif nome_produto == 1:\n",
+        "    print(\"preço: \",feijao)\n",
+        "    preco = feijao\n",
+        "    valor_total += preco\n",
+        "\n",
+        "  elif nome_produto == 3:\n",
+        "    preco = farinha\n",
+        "    valor_total += preco\n",
+        "\n",
+        "  elif nome_produto == 4:\n",
+        "    print(\"preço: \",macarrao)\n",
+        "    preco = macarrao\n",
+        "    valor_total += preco\n",
+        "\n",
+        "  elif nome_produto == 5:\n",
+        "    print(\"preço: \",carne_boi)\n",
+        "    preco = carne_boi\n",
+        "    valor_total += preco\n",
+        "\n",
+        "  elif nome_produto == 6:\n",
+        "    print(\"preço: \",carne_porco)\n",
+        "    preco = carne_porco\n",
+        "    valor_total += preco\n",
+        "\n",
+        "  elif nome_produto == 7:\n",
+        "    print(\"preço: \",frango)\n",
+        "    preco = frango\n",
+        "    valor_total += preco\n",
+        "\n",
+        "  elif nome_produto == 8:\n",
+        "    print(\"preço: \",peixe)\n",
+        "    preco = peixe\n",
+        "    valor_total += preco\n",
+        "\n",
+        "\n",
+        "print(\"===Tabela de descontos===\")\n",
+        "\n",
+        "lista = \"1 -  pix tem 5% de desconto\", \"2 - dinheiro tem 10% de desconto\", \"3 - cartão não tem desconto\"\n",
+        "\n",
+        "for listas in lista:\n",
+        "  print(listas)\n",
+        "\n",
+        "forma_pagamento = int(input(\"Escolha: \"))\n",
+        "\n",
+        "if forma_pagamento == 1:\n",
+        "  desconto = valor_total * 0.05\n",
+        "  print(\"Desconto de 5%\")\n",
+        "\n",
+        "elif forma_pagamento == 2:\n",
+        "  desconto = valor_total * 0.1\n",
+        "  print(\"Desconto de 10%\")\n",
+        "\n",
+        "elif forma_pagamento == 3:\n",
+        "  print(\"Não a desconto\")\n",
+        "\n",
+        "valor_final = valor_total - desconto\n",
+        "\n",
+        "print(f\"valor total: {valor_final}\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "-H2_csRmcs6X"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "mqH4N90gclIE"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
