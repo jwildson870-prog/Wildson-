@@ -1,2 +1,1 @@
-# Wildson-
-Estudos em python 
+
