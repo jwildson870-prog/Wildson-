@@ -65,3 +65,4 @@ Este projeto foi desenvolvido para fins de estudo e prática da linguagem Python
 ---
 
 **Autor:** Wildson
+<img width="419" height="1178" alt="85784" src="https://github.com/user-attachments/assets/c04faca9-336e-4d69-992e-89ada1468495" />
