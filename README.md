@@ -66,5 +66,6 @@ Este projeto foi desenvolvido para fins de estudo e prática da linguagem Python
 
 **Autor:** Wildson
 
+## exemplo de execução do código 
 ![Exemplo da execução do sistema 'Tapioca da Dona Maria' no terminal, demonstrando o fluxo de escolha de sabores, quantidade, aplicação de descontos e a emissão da nota fiscal final](https://github.com/user-attachments/assets/c04faca9-336e-4d69-992e-89ada1468495)
 
