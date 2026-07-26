@@ -66,6 +66,5 @@ Este projeto foi desenvolvido para fins de estudo e prática da linguagem Python
 
 **Autor:** Wildson
 
-![Exemplo da execução do sistema 'Tapioca da Dona Maria' no terminal, demonstrando o fluxo de escolha de sabores, quantidade, aplicação de descontos e a emissão da nota fiscal final](coloque o link da sua imagem aqui)
+![Exemplo da execução do sistema 'Tapioca da Dona Maria' no terminal, demonstrando o fluxo de escolha de sabores, quantidade, aplicação de descontos e a emissão da nota fiscal final](https://github.com/user-attachments/assets/c04faca9-336e-4d69-992e-89ada1468495)
 
-<img width="419" height="1178" alt="85784" src="https://github.com/user-attachments/assets/c04faca9-336e-4d69-992e-89ada1468495" />
